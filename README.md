@@ -9,12 +9,11 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 ## Install
 
 * Clone `git clone https://github.com/kdgyimah/boilerplate.git` and `cd` into the project directory
-* Execute `npm install` to download the dependencies
+* Execute `npm install` to download dependencies
 
 ## Run
 
 * Execute `npm start` or `gulp`.
-* Open `http://localhost:8080/` on your web browser.
 
 ## Build
 
@@ -89,5 +88,5 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) : Minify your JS.
 * [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your Sass into CSS.
-* [gulp-pug](https://www.npmjs.com/package/gulp-pug) : Gulp plugin for compiling Pug templates, compile Pug into HTML.
 * [gulp-concat](https://www.npmjs.com/package/gulp-concat) : Combines and rename files.
+* [gulp-pug](https://www.npmjs.com/package/gulp-pug) : Gulp plugin for compiling Pug templates, compile Pug into HTML.
