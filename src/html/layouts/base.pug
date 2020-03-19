@@ -1,0 +1,50 @@
+block variables
+
+//- include all component mixins
+include ../components/mixin
+
+block meta
+    - 
+        //- for head meta data
+        var head = {
+            title: "title of page goes here",
+            keywords: "SEO keywords",
+            description: "Description for app"
+        }
+
+doctype html
+html(lang="en")
+    head
+        //- meta data
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="keywords" content= head.keywords)
+        meta(name="description" content= head.description)
+        //- social preview links
+        meta(property="og:image" content="img/icons/logo.png")
+        meta(property="og:description" content=head.description)
+        meta(property="og:title" content=head.title)
+        meta(name="theme-color" content="#ffffff")
+        
+        //- favicon
+        link(rel="icon" sizes="any" type="image/png" href="img/icons/logo.png")
+        //- include fonts
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700|Work+Sans:400,500,600,800|Josefin+Sans:400,600,700")
+        //- include icons
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        //- stylesheets
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Titillium+Web:400,600,700|Work+Sans:400,500,600,700&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(href="css/app.css?v=0.1" rel="stylesheet")
+        //- scripts
+        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+        script(src="js/app.js")
+
+        //- title
+        title= head.title
+    body
+        block body

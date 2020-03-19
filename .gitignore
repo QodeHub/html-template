@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+dist/.DS_Store
+dist/images/.DS_Store
+README.txt

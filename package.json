@@ -1,0 +1,32 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Templating Boilerplate",
+  "main": "gulpfile.js",
+  "repository": "https://github.com/kdgyimah/boilerplate.git",
+  "author": "Kingsley G. <kingsley.gyimah@qodehub.team>",
+  "keywords": [
+    "Pug",
+    "Sass",
+    "template",
+    "development",
+    "frontend",
+    "web"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdgyimah/boilerplate/issues"
+  },
+  "homepage": "https://github.com/kdgyimah/boilerplate#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-es": "^1.0.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}
