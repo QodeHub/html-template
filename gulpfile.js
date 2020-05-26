@@ -1,10 +1,11 @@
 /*jshint esversion: 6 */
 
-const gulp   = require('gulp');
-const uglify = require("gulp-uglify");
-const sass   = require("gulp-sass");
-const pug    = require("gulp-pug");
-const concat = require("gulp-concat");
+const   gulp   = require('gulp'),
+        uglify = require("gulp-uglify"),
+        sass   = require("gulp-sass"),
+        pug    = require("gulp-pug"),
+        concat = require("gulp-concat"),
+        liveServer = require("live-server");
 
 gulp.task("js", function (cb) {
     return gulp.src([
@@ -38,8 +39,16 @@ gulp.task('pug', function() {
 
 gulp.task('build', gulp.parallel(['css', 'js', 'pug']));
 
+function liveServe(){
+    let params = {
+        root: "dist", // Set root directory that's being served.
+    }
+    liveServer.start(params);
+}
+
 gulp.task('serve', function() {
     gulp.watch("./src/js/**/*.js", gulp.parallel(['js']));
     gulp.watch("./src/scss/**/*.scss", gulp.parallel(["css"]));
     gulp.watch("./src/html/**/*.pug", gulp.parallel(["pug"]));
+    liveServe();
 });

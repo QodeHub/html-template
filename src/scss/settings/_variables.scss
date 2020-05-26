@@ -1,0 +1,16 @@
+// color variables
+:root {
+    --variable: $value;
+
+    // Breakpoint specific variables
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        --variable: $value;
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For desktops: */
+        --variable: $value;
+      }
+}
