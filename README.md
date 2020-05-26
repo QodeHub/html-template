@@ -8,12 +8,12 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 
 ## Install
 
-* Clone `git clone https://github.com/kdgyimah/boilerplate.git` and `cd` into the project directory
+* Clone and `cd` into the project directory
 * Execute `npm install` to download dependencies
 
 ## Run
 
-* Execute `npm start` or `gulp`.
+* Execute `npm start` or `gulp serve`.
 
 ## Build
 
@@ -46,42 +46,12 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
     + partials
       - footer.pug : Footer pug file.
   + scss
-    + breakpoints
-      ### You can add and edit breakpoints styles for your application here
-      - sm.scss : Specific styles for SM-BREAKPOINT (0px - 768px)
-      - md.scss : Specific styles for MD-BREAKPOINT (768px)
-      - lg.scss : Specific styles for LG-BREAKPOINT (992px)
-      - xl.scss : Specific styles for XL-BREAKPOINT (1140px)
-    + components
-      ### You can add and edit components styles for your application here
-      + buttons
-        - _buttons.scss : Import all Button styles here
-      + cards
-        - _cards.scss : Import all Card styles here
-      + dropdowns
-        - _dropdowns.scss : Import all Dropdown styles here
-      + forms
-        - _forms.scss : Import all Form styles here
-      + modals
-        - _modals.scss : Import all Modal styles here
-    + layouts
-      - _footer.scss : Footer styles go here.
-      - _header.scss : Header styles here.
-    + pages
-      ###  Specific page styles
-      - home.scss : Example scss for home page.
-      - about.scss : Example scss for about page.
-    + global
-      ### Global styles
-      - _mixins.scss : Mixins here (reusable styles)
-      - _navigation.scss : Navigation styles
-      - resets.scss : Resets
-      - utils.scss : Utiities
-      - _variables.scss : Style variables
-      - index.scss : Global styles here, such us html, body, section, headings, anchor etc.
-    + pages
-      - home.scss : Example scss for home page.
-    - app.scss : Import all scss files.
+    + base       : Contains resets and sensible defaults for basic html elements.
+    + components : Stand-alone reusable components with their modifiers and variations.
+    + helpers    : Stand-alone helper classes for small layout issues.
+    + settings   : Settings for colors, breakpoints, typography, etc.
+    + vendor     : Imported and customized CSS from 3rd party components like fancybox, select2 etc.
+    - app.scss : Import all scss files. (main file)
 ```
 
 ## Gulp Plugins
@@ -90,3 +60,4 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 * [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your Sass into CSS.
 * [gulp-concat](https://www.npmjs.com/package/gulp-concat) : Combines and rename files.
 * [gulp-pug](https://www.npmjs.com/package/gulp-pug) : Gulp plugin for compiling Pug templates, compile Pug into HTML.
+* [live-server](https://www.npmjs.com/package/live-server) : Development server with live reload capability.

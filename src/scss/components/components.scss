@@ -1,6 +1,6 @@
-// import all components
-@import "./buttons/buttons";
-@import "./cards/cards";
-@import "./dropdowns/dropdowns";
-@import "./forms/forms";
-@import "./modals/modals"
+// Stand-alone reusable components with their modifiers and variations.
+@import "./buttons";
+@import "./cards";
+@import "./dropdowns";
+@import "./forms";
+@import "./modals"

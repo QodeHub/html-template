@@ -1,28 +1,5 @@
-// global styles
-@import "./global/index";
+// main file
 
-// components
-@import "./components/components";
-
-// Import layouts styles
-@import "layouts/header";
-@import "layouts/footer";
-
-// import page styles
-@import "./pages/home";
-@import "./pages/about";
-
-// breakpoints
-@import "breakpoints/sm";
-
-@media (min-width: 768px) {
-	@import "breakpoints/md";
-}
-
-@media (min-width: 992px) {
-	@import "breakpoints/lg";
-}
-
-@media (min-width: 1140px) {
-	@import "breakpoints/xl";
-}
+// import pages
+@import "./home";
+@import "./about";

@@ -1,0 +1,33 @@
+// BREAKPOINT MIXINS
+//  Usage example: @include tablet { // declare styles here}
+
+@mixin phone {
+  /* apply styles On mobile phones: */
+  @media only screen and (max-width: 767px) { @content; }
+}
+
+ @mixin tabletdown {
+  /* apply styles On tablets size and below */
+  @media only screen and (max-width: 768px) { @content; }
+}
+
+@mixin tablet {
+    /* apply styles On tablets */
+    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
+}
+
+ @mixin md {
+  /* apply styles On tablets size and above */
+  @media only screen and (min-width: 768px) { @content; }
+}
+
+ @mixin lg {
+  /* apply styles On tablets size and above */
+  @media only screen and (min-width: 992px) { @content; }
+}
+
+ @mixin xl {
+  /* apply styles On tablets size and above */
+  @media only screen and (min-width: 1140px) { @content; }
+}
+
